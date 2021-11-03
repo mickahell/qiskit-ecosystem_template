@@ -1,4 +1,4 @@
-# My awesome Project !
+# Qiskit Ecosystem project template
 - This project is a template project with everything need to be add inside the __Qiskit Ecosystem__.
 - The workflows inside this template are the same than the one running adding and weekly checks.
 
