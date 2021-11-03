@@ -12,8 +12,7 @@ class Random:
 
     def run(self, number: Union[int, float]) -> Union[int, float]:
         """Run method."""
-        from collections import Hashable
-
+        print("Generate random number")
         return math.pow(number, self.pow)
 
     def __repr__(self):

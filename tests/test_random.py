@@ -12,5 +12,4 @@ class TestRandom(unittest.TestCase):
         """Tests run method random."""
         random = Random()
 
-        warnings.warn("test warning", DeprecationWarning)
         self.assertEqual(random.run(2), 4)
