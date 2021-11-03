@@ -206,7 +206,7 @@ logging-format-style=old
 
 # Logging modules to check that the string format arguments are in logging
 # function parameter format.
-logging-modules=logging,coloredlogs 
+logging-modules=logging
 
 
 [SPELLING]
@@ -377,7 +377,7 @@ ignore-imports=no
 ignore-signatures=no
 
 # Minimum lines number of a similarity.
-min-similarity-lines=17
+min-similarity-lines=4
 
 
 [BASIC]

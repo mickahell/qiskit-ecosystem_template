@@ -1,2 +1,3 @@
-"""Docstrings"""
+"""Docstring."""
+
 from .random import Random
