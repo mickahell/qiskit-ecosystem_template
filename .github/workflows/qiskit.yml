@@ -52,7 +52,7 @@ jobs:
         git clone https://github.com/Qiskit/qiskit-terra.git
         cd qiskit-terra
         pip install cython
-        pip uninstall qiskit-terra
+        pip uninstall qiskit-terra --yes
         pip install .
     - name: Test using tox envs
       run: |
