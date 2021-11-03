@@ -1,6 +1,5 @@
 """Docstring."""
 import unittest
-import warnings
 
 from src import Random
 
