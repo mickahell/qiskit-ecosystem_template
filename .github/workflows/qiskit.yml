@@ -13,7 +13,7 @@ jobs:
       run: |
         echo "PASS=True" >> $GITHUB_ENV
         qiskit=$(cat ecosystem.json | jq .qiskit) || qiskit="true"
-        echo $qiskit
+        echo "qiskit : $qiskit"
         
         if [[ "${qiskit}" != "true" ]]; then
             echo "PASS=False" >> $GITHUB_ENV
