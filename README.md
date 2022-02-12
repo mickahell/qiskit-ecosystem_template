@@ -29,4 +29,4 @@
 - The lastest version of the files `.pylinrc` and `.coveragerc` are automatically download during the actions.
 
 ### Qiskit actions
-- The workflows qiskit.yml is here to tests the project are still update with the actual and dev version of Qiskit.
+- The workflows qiskit.yml is here to tests the project are still update with the actual and dev version of Qiskit (if Qiskit is not false in `ecosystem.json`).
