@@ -26,6 +26,7 @@
 
 ## Actions
 - The worflow tests.yml is here to tests automatically the units tests, coverage lint and black at every push.
+- The lastest version of the files `.pylinrc` and `.coveragerc` are automatically download during the actions.
 
 ### Qiskit actions
 - The workflows qiskit.yml is here to tests the project are still update with the actual and dev version of Qiskit.
