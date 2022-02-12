@@ -8,7 +8,7 @@ class Random:
     def __init__(self):
         """Demo random."""
         self.pow = 2
-        self.qasm = Aer.get_backend("qasm_simulator")
+        self.qasm = Aer.get_backend("aer_simulator")
 
     def run(self, number: int) -> int:
         """Run method."""
