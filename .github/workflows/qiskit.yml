@@ -13,9 +13,11 @@ jobs:
       run: |
         echo "PASS=True" >> $GITHUB_ENV
         qiskit=$(cat ecosystem.json | jq .qiskit || echo "true")
+        echo $qiskit
         
         if [[ "${qiskit}" != "true" ]]; then
             echo "PASS=False" >> $GITHUB_ENV
+            echo "::notice file=ecosystem.json::Qiskit is not use here !"
         else
             echo "::notice file=ecosystem.json::Qiskit is using here !"
         fi
@@ -43,10 +45,6 @@ jobs:
       if: ${{ env.PASS == 'True' }}
       run: |
         tox ${{ env.TOX_ENV }}
-    
-    - name: Do nothing
-      if: ${{ env.PASS == 'False' }}
-      run: echo "::notice file=ecosystem.json::Qiskit is not use here !"
 
   dev:
     runs-on: ubuntu-latest
@@ -61,6 +59,7 @@ jobs:
         
         if [[ "${qiskit}" != "true" ]]; then
             echo "PASS=False" >> $GITHUB_ENV
+            echo "::notice file=ecosystem.json::Qiskit is not use here !"
         fi
         
     - name: Set up Python ${{ env.python-version }}
@@ -90,7 +89,3 @@ jobs:
       if: ${{ env.PASS == 'True' }}
       run: |
         tox ${{ env.TOX_ENV }}
-    
-    - name: Do nothing
-      if: ${{ env.PASS == 'False' }}
-      run: echo "::notice file=ecosystem.json,::Qiskit is not use here !"
