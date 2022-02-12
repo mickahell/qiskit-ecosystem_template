@@ -25,7 +25,11 @@
   - Run black on unitary file `black <file>`
 
 ## Actions
-- The worflow tests.yml is here to tests automatically the units tests, coverage lint and black at every push.
+- The worflow tests.yml is here to tests automatically at every push:
+  - units tests
+  - coverage
+  - lint
+  - black
 - The lastest version of the files `.pylinrc` and `.coveragerc` are automatically download during the actions.
 
 ### Qiskit actions
