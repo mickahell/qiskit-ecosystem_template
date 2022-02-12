@@ -12,6 +12,7 @@ jobs:
     - name: Check if Qiskit
       run: |
         echo "PASS=True" >> $GITHUB_ENV
+        qiskit="true"
         qiskit=$(cat ecosystem.json | jq .qiskit) || qiskit="true"
         echo "qiskit : $qiskit"
         
