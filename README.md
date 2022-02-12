@@ -19,6 +19,7 @@
 
 ## Tests execution
 - Run for style checks `tox -elint`
+- Run for ecosystem.json checks `tox -ejson`
 - Run for tests `tox -epy39`
 - Run coverage `tox -ecoverage`
 - Run black `tox -eblack`
