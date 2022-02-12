@@ -12,7 +12,7 @@ class Random:
         self.pow = 2
         self.qasm = Aer.get_backend('qasm_simulator')
 
-    def run(self, number: Union[int, float]) -> Union[int, float]:
+    def run(self, number: int) -> int:
         """Run method."""
         nb_qubits = number
         print("Generate random number")
