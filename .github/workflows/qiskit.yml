@@ -56,9 +56,11 @@ jobs:
         echo "PASS=True" >> $GITHUB_ENV
         qiskit=$(cat ecosystem.json | jq .qiskit)
         
-        if [[ "${qiskit}" != "true" ]]; then
+        if [[ "${qiskit}" == "false" ]]; then
             echo "PASS=False" >> $GITHUB_ENV
             echo "::notice file=ecosystem.json::Qiskit is not use here !"
+        else
+            echo "::notice file=ecosystem.json::Qiskit is using here !"
         fi
         
     - name: Set up Python ${{ env.python-version }}
