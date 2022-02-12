@@ -57,7 +57,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
         pip install -r requirements-dev.txt
-        curl https://github.com/qiskit-community/ecosystem/blob/main/ecosystem/templates/.coveragerc > .coveragerc
+        curl https://raw.githubusercontent.com/qiskit-community/ecosystem/main/ecosystem/templates/.coveragerc > .coveragerc
     - name: Run coverage
       run: |
         tox -ecoverage
