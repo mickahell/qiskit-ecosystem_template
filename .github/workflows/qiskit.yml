@@ -12,11 +12,9 @@ jobs:
     - name: Check if Qiskit
       run: |
         echo "PASS=True" >> $GITHUB_ENV
-        qiskit="true"
-        qiskit=$(cat ecosystem.json | jq .qiskit) || qiskit="true"
-        echo "qiskit : $qiskit"
+        qiskit=$(cat ecosystem.json | jq .qiskit)
         
-        if [[ "${qiskit}" != "true" ]]; then
+        if [[ "${qiskit}" == "false" ]]; then
             echo "PASS=False" >> $GITHUB_ENV
             echo "::notice file=ecosystem.json::Qiskit is not use here !"
         else
