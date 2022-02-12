@@ -1,7 +1,7 @@
 """Docstring."""
 import math
 from typing import Union
-from qiskit import Aer, QuantumCircuit, execute, IBMQ
+from qiskit import Aer, QuantumCircuit, execute, QuantumRegister, ClassicalRegister
 
 
 class Random:
