@@ -1,5 +1,6 @@
 """Docstring."""
-from qiskit import Aer, QuantumCircuit, execute, QuantumRegister, ClassicalRegister
+from qiskit import QuantumCircuit, execute, QuantumRegister, ClassicalRegister
+from qiskit_aer import Aer
 
 
 class Random:
