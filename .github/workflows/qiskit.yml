@@ -46,7 +46,6 @@ jobs:
         echo tox_env
         echo TOX_ENV=$tox_env >> $GITHUB_ENV
     - name: Install dependencies
-      if: ${{ env.PASS == 'True' }}
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
